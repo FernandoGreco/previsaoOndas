@@ -9,7 +9,7 @@ function loadCity(local){
   };
   //http://servicos.cptec.inpe.br/XML/cidade/851/todos/tempos/ondas.xml   
  //pega o codigo da cidade escolhida
-  xhttp.open("GET", "https://servicos.cptec.inpe.br/XML/listaCidades?city="+local, true);
+  xhttp.open("GET", "http://servicos.cptec.inpe.br/XML/listaCidades?city="+local, true);
   xhttp.send();
 }
 
@@ -34,7 +34,7 @@ function loadDoc(idCidade) {
     }
   };
   //variavel cids contém o código da cidade
-  xhttp.open("GET", "https://servicos.cptec.inpe.br/XML/cidade/"+idCidade+"/todos/tempos/ondas.xml", true);
+  xhttp.open("GET", "http://servicos.cptec.inpe.br/XML/cidade/"+idCidade+"/todos/tempos/ondas.xml", true);
   xhttp.send();
 }
 
